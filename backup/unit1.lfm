@@ -1,0 +1,156 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 492
+  Height = 498
+  Top = 148
+  Width = 280
+  BorderStyle = bsSingle
+  Caption = 'Gerador de senhas'
+  ClientHeight = 498
+  ClientWidth = 280
+  OnCreate = FormCreate
+  LCLVersion = '1.8.0.6'
+  object tEdtResultado: TEdit
+    Left = 0
+    Height = 23
+    Top = 32
+    Width = 277
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object btnGerar: TButton
+    Left = 8
+    Height = 25
+    Top = 64
+    Width = 75
+    Caption = 'Gerar'
+    OnClick = btnGerarClick
+    TabOrder = 1
+  end
+  object btnLimpar: TButton
+    Left = 88
+    Height = 25
+    Top = 64
+    Width = 75
+    Caption = 'Limpar'
+    OnClick = btnLimparClick
+    TabOrder = 2
+  end
+  object btnSair: TButton
+    Left = 197
+    Height = 25
+    Top = 64
+    Width = 75
+    Anchors = [akLeft]
+    Caption = 'Sair'
+    OnClick = btnSairClick
+    TabOrder = 3
+  end
+  object tEdtQuantia: TEdit
+    Left = 8
+    Height = 23
+    Top = 144
+    Width = 269
+    TabOrder = 4
+    Text = '25'
+  end
+  object lblQuantia: TLabel
+    Left = 10
+    Height = 15
+    Top = 128
+    Width = 108
+    Caption = 'Quantia de caracters'
+    ParentColor = False
+  end
+  object tEdtNumerais: TEdit
+    Left = 8
+    Height = 23
+    Top = 208
+    Width = 264
+    ReadOnly = True
+    TabOrder = 5
+    Text = '1234567890'
+  end
+  object tEdtUperCase: TEdit
+    Left = 8
+    Height = 23
+    Top = 272
+    Width = 267
+    ReadOnly = True
+    TabOrder = 6
+    Text = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+  end
+  object tEdtLowCase: TEdit
+    Left = 8
+    Height = 23
+    Top = 336
+    Width = 267
+    ReadOnly = True
+    TabOrder = 7
+    Text = 'abcdefghijklmnopqrstuvwxyz'
+  end
+  object chkboxNumerais: TCheckBox
+    Left = 8
+    Height = 19
+    Top = 176
+    Width = 71
+    Caption = 'Numerais'
+    TabOrder = 8
+  end
+  object chkboxUperCase: TCheckBox
+    Left = 8
+    Height = 19
+    Top = 240
+    Width = 73
+    Caption = 'Uper Case'
+    TabOrder = 9
+  end
+  object chkboxLowCase: TCheckBox
+    Left = 10
+    Height = 19
+    Top = 304
+    Width = 70
+    Caption = 'Low Case'
+    TabOrder = 10
+  end
+  object tedtControle: TEdit
+    Left = 0
+    Height = 23
+    Top = 472
+    Width = 272
+    TabOrder = 11
+    Visible = False
+  end
+  object tEdtCaractersSpeciais: TEdit
+    Left = 8
+    Height = 23
+    Top = 400
+    Width = 269
+    TabOrder = 12
+  end
+  object chkboxCaractersEspeciais: TCheckBox
+    Left = 10
+    Height = 19
+    Top = 368
+    Width = 114
+    Caption = 'Caracters Speciais'
+    TabOrder = 13
+  end
+  object btnMais: TButton
+    Left = 8
+    Height = 25
+    Top = 96
+    Width = 24
+    Caption = '+'
+    OnClick = btnMaisClick
+    TabOrder = 14
+  end
+  object btnMenos: TButton
+    Left = 32
+    Height = 25
+    Top = 96
+    Width = 24
+    Caption = '-'
+    OnClick = btnMenosClick
+    TabOrder = 15
+  end
+end
